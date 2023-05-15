@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+}
+
+section {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+
+/* Desktop view */
+@media (min-width: 992px) {
+    /* No additional styles needed for the desktop view */
+}
+
+/* Tablet view */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        flex-wrap: wrap;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+    }
+}
